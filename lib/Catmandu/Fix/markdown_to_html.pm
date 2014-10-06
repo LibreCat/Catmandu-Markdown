@@ -7,7 +7,7 @@ use Text::Markdown::Discount;
 our $VERSION = "0.01";
 
 has field => (
-    is => 'ro' , 
+    is => 'ro' ,
     required => 1
 );
 around BUILDARGS => sub {
@@ -18,7 +18,7 @@ around BUILDARGS => sub {
 sub emit {
     my($self,$fixer) = @_;
 
-    my $perl = "";  
+    my $perl = "";
 
     my $field = $fixer->split_path($self->field());
     my $key = pop @$field;
@@ -27,7 +27,7 @@ sub emit {
         my $var = shift;
         $fixer->emit_get_key($var,$key, sub {
             my $var = shift;
-            "${var} = is_string(${var}) ? Text::Markdown::Discount::markdown(${var}) : \"\";";  
+            "${var} = is_string(${var}) ? Text::Markdown::Discount::markdown(${var}) : \"\";";
         });
     });
 

@@ -1,0 +1,14 @@
+!.gitignore
+.DS_Store
+*.swp
+.build
+_build
+blib
+Build
+Makefile.PL
+MANIFEST*
+META.*
+MYMETA.*
+Catmandu-Markdown-*
+!*.t
+_build_params
