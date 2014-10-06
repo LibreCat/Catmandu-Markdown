@@ -4,7 +4,7 @@ use Moo;
 use Catmandu::Util qw(:is :check);
 use Text::Markdown::Discount;
 
-our $VERSION = "0.01";
+our $VERSION = "0.011";
 
 has field => (
     is => 'ro' ,

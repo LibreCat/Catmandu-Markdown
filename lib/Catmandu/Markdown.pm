@@ -1,5 +1,5 @@
 package Catmandu::Markdown;
-our $VERSION = "0.01";
+our $VERSION = "0.011";
 
 =head1 NAME
 
